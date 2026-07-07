@@ -30,6 +30,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.service-card, .service-detail-card, .industry-card, .process-step, .process-detail-step, .why-card, .brand-message-text, .about-content, .engagement-card').forEach(el => {
+document.querySelectorAll('.service-card, .service-detail-card, .industry-card, .process-step, .process-flow-step, .why-card, .brand-message-text, .about-content, .engagement-card').forEach(el => {
   observer.observe(el);
 });
