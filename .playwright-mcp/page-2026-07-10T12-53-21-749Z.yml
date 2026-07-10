@@ -1,0 +1,130 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - navigation "Main navigation" [ref=f3e3]:
+      - link "Brand Presence Inc." [ref=f3e4] [cursor=pointer]:
+        - /url: index.html
+      - list [ref=f3e9]:
+        - listitem [ref=f3e10]:
+          - link "Home" [ref=f3e11] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f3e12]:
+          - link "About" [ref=f3e13] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=f3e14]:
+          - link "Services" [ref=f3e15] [cursor=pointer]:
+            - /url: services.html
+        - listitem [ref=f3e16]:
+          - link "Process" [ref=f3e17] [cursor=pointer]:
+            - /url: process.html
+        - listitem [ref=f3e18]:
+          - link "Engagements" [ref=f3e19] [cursor=pointer]:
+            - /url: engagements.html
+        - listitem [ref=f3e20]:
+          - link "Contact" [ref=f3e21] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=f3e22]:
+    - region [ref=f3e23]:
+      - img "Ongoing brand stewardship and client partnerships" [ref=f3e25]
+      - generic [ref=f3e27]:
+        - heading "Monthly Brand Stewardship" [level=1] [ref=f3e28]
+        - paragraph [ref=f3e29]: Brand Presence works with clients through monthly retainer engagements.
+    - generic [ref=f3e32]:
+      - generic [ref=f3e33]:
+        - paragraph [ref=f3e34]: Each engagement is customized based on the organization’s size, number of platforms, content needs, reputation oversight, leadership involvement, and photography or video coordination requirements.
+        - paragraph [ref=f3e35]: Our work is designed for organizations that want ongoing brand stewardship rather than one-time marketing support.
+        - paragraph [ref=f3e36]: Creative production, including photography, videography, and outside design work, is quoted separately when needed.
+        - paragraph [ref=f3e37]: To determine the right level of support, we begin with a brand review and consultation.
+      - img "Customized monthly brand stewardship engagement" [ref=f3e39]
+    - generic [ref=f3e41]:
+      - heading "Typical Engagement Areas" [level=2] [ref=f3e44]
+      - list [ref=f3e45]:
+        - listitem [ref=f3e46]: Monthly brand presentation review
+        - listitem [ref=f3e50]: Organic social media planning and management
+        - listitem [ref=f3e54]: Content calendar development
+        - listitem [ref=f3e58]: Photography and video coordination
+        - listitem [ref=f3e62]: Online reputation monitoring
+        - listitem [ref=f3e66]: Leadership and executive presence support
+        - listitem [ref=f3e70]: Brand consistency recommendations
+        - listitem [ref=f3e74]: Monthly reporting and strategy review
+    - generic [ref=f3e79]:
+      - generic [ref=f3e80]:
+        - heading "Who This Is For" [level=2] [ref=f3e81]
+        - paragraph [ref=f3e82]: Our engagements are best suited for organizations that care about how they are perceived and want consistent, professional oversight of their public-facing digital presence.
+        - paragraph [ref=f3e83]: We work best with clients who value long-term brand credibility, reputation, and consistency.
+      - img "Organizations focused on long-term brand credibility" [ref=f3e85]
+    - generic [ref=f3e87]:
+      - generic [ref=f3e88]:
+        - heading "What We Do Not Provide" [level=2] [ref=f3e89]
+        - paragraph [ref=f3e90]: Brand Presence is focused on digital brand presentation and brand management.
+        - paragraph [ref=f3e91]: "We do not provide:"
+      - generic [ref=f3e92]:
+        - generic [ref=f3e93]: Website design
+        - generic [ref=f3e94]: Website management
+        - generic [ref=f3e95]: SEO
+        - generic [ref=f3e96]: Google Ads
+        - generic [ref=f3e97]: PPC advertising
+        - generic [ref=f3e98]: Email newsletters
+        - generic [ref=f3e99]: Marketing automation
+        - generic [ref=f3e100]: Coding
+        - generic [ref=f3e101]: Software development
+      - paragraph [ref=f3e102]: "This allows us to stay focused on what we do best: improving how your organization is seen, understood, and trusted."
+    - generic [ref=f3e104]:
+      - generic [ref=f3e105]:
+        - heading "Who We Serve" [level=2] [ref=f3e107]
+        - paragraph [ref=f3e108]: Brand Presence works with organizations that care about reputation, professionalism, and public trust.
+        - paragraph [ref=f3e109]: "We may be a good fit for:"
+      - generic [ref=f3e110]:
+        - generic [ref=f3e111]:
+          - img "Professional service firms" [ref=f3e112]
+          - generic [ref=f3e113]: Professional service firms
+        - generic [ref=f3e114]:
+          - img "Healthcare organizations" [ref=f3e115]
+          - generic [ref=f3e116]: Healthcare organizations
+        - generic [ref=f3e117]:
+          - img "Real estate companies" [ref=f3e118]
+          - generic [ref=f3e119]: Real estate companies
+        - generic [ref=f3e120]:
+          - img "Schools and education groups" [ref=f3e121]
+          - generic [ref=f3e122]: Schools and education groups
+        - generic [ref=f3e123]:
+          - img "Churches and nonprofits" [ref=f3e124]
+          - generic [ref=f3e125]: Churches and nonprofits
+        - generic [ref=f3e126]:
+          - img "Hospitality businesses" [ref=f3e127]
+          - generic [ref=f3e128]: Hospitality businesses
+        - generic [ref=f3e129]:
+          - img "Community-based organizations" [ref=f3e130]
+          - generic [ref=f3e131]: Community-based organizations
+        - generic [ref=f3e132]:
+          - img "Private companies" [ref=f3e133]
+          - generic [ref=f3e134]: Private companies
+        - generic [ref=f3e135]:
+          - img "Leadership teams" [ref=f3e136]
+          - generic [ref=f3e137]: Leadership teams
+        - generic [ref=f3e138]:
+          - img "Growing organizations with outdated digital presentation" [ref=f3e139]
+          - generic [ref=f3e140]: Growing organizations with outdated digital presentation
+  - contentinfo [ref=f3e141]:
+    - generic: BP
+    - generic [ref=f3e144]:
+      - generic [ref=f3e145]:
+        - link "Brand Presence Inc." [ref=f3e146] [cursor=pointer]:
+          - /url: index.html
+        - navigation "Footer navigation" [ref=f3e153]:
+          - link "Home·" [ref=f3e154] [cursor=pointer]:
+            - /url: index.html
+          - link "About·" [ref=f3e155] [cursor=pointer]:
+            - /url: about.html
+          - link "Services·" [ref=f3e156] [cursor=pointer]:
+            - /url: services.html
+          - link "Process·" [ref=f3e157] [cursor=pointer]:
+            - /url: process.html
+          - link "Engagements·" [ref=f3e158] [cursor=pointer]:
+            - /url: engagements.html
+          - link "Contact" [ref=f3e159] [cursor=pointer]:
+            - /url: contact.html
+      - paragraph [ref=f3e161]: Brand Presence Inc. helps organizations improve public-facing digital brand presentation, brand consistency, organic social media presence, photography and video coordination, and online reputation oversight.
+      - generic [ref=f3e162]:
+        - paragraph [ref=f3e163]: © Brand Presence Inc. All rights reserved.
+        - link "Schedule a Brand Review →" [ref=f3e164] [cursor=pointer]:
+          - /url: contact.html
