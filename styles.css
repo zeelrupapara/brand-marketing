@@ -1,5 +1,5 @@
 /* ============================================
-   Brand Presence Inc. — Deep Navy & White Theme
+   Haley Mae LLC — Deep Navy & White Theme
    ============================================ */
 
 @font-face {
@@ -1838,6 +1838,26 @@ body.nav-open .nav-toggle span:nth-child(3) {
 
 .page-hero--process .page-hero-bg img {
   object-position: center 40%;
+}
+
+/* About hero: portrait of Haley Mae — keep face fully in frame */
+.page-hero--about {
+  min-height: clamp(380px, 52vh, 560px);
+}
+
+.page-hero--about .page-hero-bg img {
+  object-fit: cover;
+  object-position: 38% 18%;
+}
+
+@media (max-width: 768px) {
+  .page-hero--about {
+    min-height: clamp(360px, 55vh, 480px);
+  }
+
+  .page-hero--about .page-hero-bg img {
+    object-position: 35% 12%;
+  }
 }
 
 .page-hero-overlay {
