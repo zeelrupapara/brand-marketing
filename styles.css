@@ -93,7 +93,7 @@
   --color-secondary-dark: var(--color-primary-dark);
 
   --gradient-brand: linear-gradient(135deg, var(--color-primary) 0%, #2A628F 100%);
-  --gradient-hero: linear-gradient(115deg, rgba(247, 248, 250, 0.94) 0%, rgba(238, 245, 251, 0.78) 45%, rgba(247, 244, 239, 0.42) 72%, rgba(255, 255, 255, 0.18) 100%);
+  --gradient-hero: linear-gradient(115deg, rgba(247, 248, 250, 0.82) 0%, rgba(238, 245, 251, 0.62) 45%, rgba(247, 244, 239, 0.28) 72%, rgba(255, 255, 255, 0.08) 100%);
   --gradient-process: linear-gradient(160deg, var(--color-bg-blue) 0%, var(--color-bg-alt) 100%);
   --gradient-gold: linear-gradient(90deg, var(--color-accent) 0%, #D4BC8A 100%);
   --gradient-sage: linear-gradient(135deg, var(--color-sage) 0%, var(--color-sage-dark) 100%);
@@ -428,28 +428,20 @@ body.nav-open .site-header.scrolled {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: var(--color-navy);
   z-index: 1001;
-  transition: color 0.3s;
+  transition: opacity 0.2s;
 }
 
-.site-header.scrolled .nav-logo {
-  color: var(--color-navy);
+.nav-logo:hover {
+  opacity: 0.85;
 }
 
-.nav-logo .icon-logo {
-  width: 2rem;
-  height: 2rem;
-  color: var(--color-primary);
-  stroke: var(--color-primary);
-}
-
-.site-header.scrolled .nav-logo .icon-logo {
-  color: var(--color-primary);
-  stroke: var(--color-primary);
+.nav-logo-img {
+  display: block;
+  width: auto;
+  height: 1.85rem;
+  max-width: min(42vw, 11.5rem);
+  object-fit: contain;
 }
 
 .nav-links {
@@ -528,10 +520,6 @@ body.nav-open .site-header.scrolled {
 
 body.nav-open .nav-toggle span {
   background: var(--color-navy);
-}
-
-body.nav-open .nav-logo {
-  color: var(--color-navy);
 }
 
 body.nav-open .nav-toggle span:nth-child(1) {
@@ -625,10 +613,10 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .hero-home .hero-overlay {
   background: linear-gradient(
     115deg,
-    rgba(247, 248, 250, 0.96) 0%,
-    rgba(238, 245, 251, 0.86) 38%,
-    rgba(247, 244, 239, 0.48) 68%,
-    rgba(255, 255, 255, 0.2) 100%
+    rgba(247, 248, 250, 0.84) 0%,
+    rgba(238, 245, 251, 0.7) 38%,
+    rgba(247, 244, 239, 0.32) 68%,
+    rgba(255, 255, 255, 0.1) 100%
   );
 }
 
@@ -660,40 +648,21 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .hero-brand-mark {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.55rem 1rem 0.55rem 0.65rem;
+  padding: 0.7rem 1.15rem;
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--color-border);
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-sm);
 }
 
-.hero-brand-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 50%;
-  background: var(--color-sage-light);
-  border: 1px solid rgba(167, 183, 162, 0.4);
-}
-
-.hero-brand-icon .icon-logo {
-  width: 1.25rem;
-  height: 1.25rem;
-  color: var(--color-primary);
-  stroke: var(--color-primary);
-}
-
-.hero-brand-name {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--color-navy);
+.hero-brand-logo {
+  display: block;
+  width: auto;
+  height: clamp(1.75rem, 4vw, 2.35rem);
+  max-width: min(70vw, 14rem);
+  object-fit: contain;
 }
 
 .hero-content {
@@ -1494,7 +1463,6 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .footer-identity {
   display: inline-flex;
   align-items: center;
-  gap: 1rem;
   transition: opacity 0.2s;
 }
 
@@ -1502,44 +1470,12 @@ body.nav-open .nav-toggle span:nth-child(3) {
   opacity: 0.9;
 }
 
-.footer-identity-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: var(--radius-md);
-  background: var(--color-accent-light);
-  border: 1px solid rgba(31, 78, 121, 0.12);
-}
-
-.footer-identity-icon .icon-logo {
-  width: 1.75rem;
-  height: 1.75rem;
-  color: var(--color-primary);
-  stroke: var(--color-primary);
-}
-
-.footer-identity-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.footer-identity-name {
-  font-family: var(--font-heading);
-  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
-  font-weight: 600;
-  color: var(--color-navy);
-  line-height: 1.25;
-}
-
-.footer-identity-tag {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-accent-dark);
+.footer-logo-img {
+  display: block;
+  width: auto;
+  height: 2.35rem;
+  max-width: min(70vw, 12.5rem);
+  object-fit: contain;
 }
 
 .footer-menu {
