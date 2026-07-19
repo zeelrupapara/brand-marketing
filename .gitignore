@@ -1,7 +1,9 @@
 node_modules/
-package.json
-package-lock.json
-playwright-*.png
-playwright-screenshots/
-screenshot-*.mjs
-verify-images.mjs
+.next/
+dist/
+.wrangler/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
