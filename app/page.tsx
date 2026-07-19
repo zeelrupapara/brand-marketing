@@ -16,10 +16,25 @@ const steps = [
 
 export default function Home() {
   return <main>
-    <header className="topbar">
+    <header className="topbar" id="site-header">
       <a className="logo" href="#top" aria-label="Haley Mae home">HALEY MAE<span>Brand Management</span></a>
-      <nav aria-label="Main navigation"><a href="#approach">Approach</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a></nav>
+      <nav aria-label="Main navigation">
+        <a href="#approach">Approach</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+      </nav>
       <a className="top-cta" href="#contact">Request a Brand Review</a>
+      <button className="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+      </button>
+      <nav className="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#approach">Approach</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact">Request a Brand Review</a>
+      </nav>
     </header>
 
     <section className="hero" id="top">
@@ -49,7 +64,7 @@ export default function Home() {
     </section>
 
     <section className="results">
-      <img src="/images/reputation.png" alt="Brand reputation and presentation review in a refined workspace"/>
+      <img src="/images/haley.jpeg" alt="Haley Atenhan, founder of Haley Mae" className="results-portrait"/>
       <div><p className="label">What stronger looks like</p><blockquote>“Every photograph, profile, post, review response, and leadership update should feel like it came from the same confident organization.”</blockquote><div className="outcomes"><p><b>Clearer</b> positioning and public language</p><p><b>Stronger</b> leadership and recruiting presence</p><p><b>Consistent</b> visuals across every platform</p><p><b>Informed</b> reputation decisions and responses</p></div></div>
     </section>
 
@@ -65,7 +80,23 @@ export default function Home() {
       <p className="industries">Professional services · Healthcare · Real estate · Education · Churches & nonprofits · Hospitality · Private companies</p>
     </section>
 
-    <section className="about" id="about"><div className="monogram">HM</div><div><p className="label">About Haley Mae</p><h2>Warm judgment. Elevated standards. Personal attention.</h2></div><aside><p>Haley Mae is a founder-led brand management firm built for organizations that value reputation, professionalism, and long-term trust.</p><p>Drawing on experience in client relations, hospitality, private aviation, photography, and public presentation, Haley brings a discerning but practical perspective to how organizations show up.</p><p>The result is not a louder brand. It is a more considered, confident, and credible one.</p></aside></section>
+    <section className="about" id="about">
+      <div className="about-header">
+        <div className="monogram">HM</div>
+        <div>
+          <p className="label">About Haley</p>
+          <h2>Haley Atenhan believes a brand is more than what people see.</h2>
+        </div>
+      </div>
+      <div className="about-body">
+        <p>It is what they experience, remember, and ultimately trust.</p>
+        <p>With a background spanning creative direction, client relations, brand presentation, and strategic communication, Haley brings a thoughtful perspective to how organizations present themselves to the world. She graduated summa cum laude from Liberty University with a degree in Social Sciences, reflecting the discipline, curiosity, and commitment to excellence that continue to shape her work.</p>
+        <p>Haley has worked in fast-moving, image-conscious environments where attention to detail, clear communication, and a strong understanding of the audience are essential. Her experience has taught her that a strong brand is not created through appearance alone. It is built through consistency, authenticity, and the way people feel at every point of interaction.</p>
+        <p>Through Haley Mae, she helps businesses, executives, and organizations strengthen their public presence by bringing greater clarity, consistency, and intention to every brand touchpoint. Her approach combines creative instinct with practical strategy, ensuring that a brand not only looks polished, but also feels authentic and aligned with the people behind it.</p>
+        <p>Known for her ability to understand a client’s vision and translate it into a cohesive brand experience, Haley works closely with each organization to identify what makes it distinctive and ensure that distinction is communicated with confidence.</p>
+        <p>At the heart of Haley Mae is a simple belief: when a brand is presented with purpose, people notice, connect, and remember.</p>
+      </div>
+    </section>
 
     <section className="contact" id="contact"><p className="label">Begin the conversation</p><h2>See your brand the way the public sees it.</h2><p>A private introductory review helps identify what already feels strong, what may be weakening trust, and where focused attention can make the greatest difference.</p><a className="button light" href="mailto:hello@haleymae.com?subject=Brand%20Review%20Request">Request a Brand Review <b>↗</b></a><div><span>Confidential introductory conversation</span><span>Atlanta · Available nationwide</span></div></section>
 
