@@ -1,25 +1,2 @@
-const header = document.getElementById("site-header");
-const toggle = header?.querySelector(".nav-toggle");
-
-if (header && toggle) {
-  const setOpen = (open) => {
-    header.classList.toggle("is-open", open);
-    toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-  };
-
-  toggle.addEventListener("click", () => {
-    setOpen(!header.classList.contains("is-open"));
-  });
-
-  header.addEventListener("click", (event) => {
-    const target = event.target;
-    if (target && target.closest && target.closest(".mobile-nav a")) {
-      setOpen(false);
-    }
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 980) setOpen(false);
-  });
-}
+const header=document.getElementById("site-header"),toggle=header?.querySelector(".nav-toggle"),panel=document.getElementById("mobile-nav"),backdrop=document.getElementById("nav-backdrop");
+if(header&&toggle&&panel&&backdrop){const setOpen=open=>{document.body.classList.toggle("nav-open",open),header.classList.toggle("is-open",open),toggle.setAttribute("aria-expanded",open?"true":"false"),toggle.setAttribute("aria-label",open?"Close menu":"Open menu"),backdrop.hidden=!open,document.body.style.overflow=open?"hidden":""};toggle.addEventListener("click",()=>setOpen(!document.body.classList.contains("nav-open"))),backdrop.addEventListener("click",()=>setOpen(!1)),panel.addEventListener("click",e=>{e.target?.closest?.("a")&&setOpen(!1)}),window.addEventListener("keydown",e=>{"Escape"===e.key&&setOpen(!1)});let resizeTimer=0;window.addEventListener("resize",()=>{clearTimeout(resizeTimer),resizeTimer=setTimeout(()=>{window.innerWidth>980&&setOpen(!1)},150)},{passive:!0}),window.addEventListener("pagehide",()=>setOpen(!1)),window.addEventListener("pageshow",e=>{e.persisted&&setOpen(!1)})}

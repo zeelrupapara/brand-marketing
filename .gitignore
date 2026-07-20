@@ -2,3 +2,5 @@
 *.log
 .env
 .env.*
+playwright-screenshots/
+node_modules/
