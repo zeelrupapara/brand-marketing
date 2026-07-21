@@ -791,6 +791,10 @@ blockquote {
   min-height: 245px;
   padding: 29px 24px 29px 0;
   border-right: 1px solid var(--line);
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .steps article:not(:first-child) { padding-left: 24px; }
