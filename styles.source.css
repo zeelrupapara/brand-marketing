@@ -213,8 +213,10 @@ h1 {
   line-height: 1.8;
 }
 
+.services .lead,
+.transform .lead,
 .why .lead {
-  max-width: 920px;
+  max-width: none;
 }
 
 .why .lead + .lead {
@@ -305,14 +307,15 @@ h1 {
 .intro {
   padding: clamp(72px, 12vw, 176px) var(--page-x);
   display: grid;
-  grid-template-columns: minmax(0, 20%) minmax(0, 80%);
-  gap: 24px;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 48px);
+  align-items: start;
 }
 
 .intro > div {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(0, .8fr);
-  gap: clamp(28px, 8vw, 8vw);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 56px);
   min-width: 0;
 }
 
@@ -370,7 +373,7 @@ h1 {
 
 .perspective h2 {
   margin: 0 0 clamp(48px, 7vw, 80px);
-  max-width: 35ch;
+  max-width: none;
   color: white;
   font-size: clamp(2.15rem, 4.5vw, 4.1rem);
   line-height: 1.12;
@@ -509,7 +512,7 @@ h1 {
   list-style: none;
   border-top: 1px solid #aab4aa;
   columns: 2;
-  column-gap: clamp(28px, 6vw, 80px);
+  column-gap: clamp(24px, 4vw, 48px);
 }
 
 .plain-list li {
@@ -559,7 +562,7 @@ h1 {
 
 .faq-list details p {
   margin: 0 0 28px;
-  max-width: 760px;
+  max-width: none;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.8;
@@ -610,7 +613,7 @@ h1 {
 }
 
 .who .heading h2 {
-  max-width: 16ch;
+  max-width: none;
 }
 
 .who-list {
@@ -640,7 +643,7 @@ h1 {
 
 .who-list li:last-child:nth-child(odd) {
   grid-column: 1 / -1;
-  max-width: 50%;
+  max-width: none;
 }
 
 .offer {
@@ -721,7 +724,7 @@ h1 {
 }
 
 .heading > p:not(.label) {
-  max-width: 550px;
+  max-width: none;
   margin-top: 36px;
 }
 
@@ -854,8 +857,8 @@ blockquote {
 .steps p { color: var(--muted); font-size: 16px; line-height: 1.8; }
 
 .fine {
-  max-width: 830px;
-  margin: 38px 0 0 auto;
+  max-width: none;
+  margin: 38px 0 0;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.8;
@@ -1157,7 +1160,7 @@ footer small {
   }
 
   .intro h2 {
-    max-width: 18ch;
+    max-width: none;
   }
 
   .perspective-columns {
@@ -1177,7 +1180,7 @@ footer small {
   }
 
   .perspective h2 {
-    max-width: 18ch;
+    max-width: none;
   }
 
   footer {
