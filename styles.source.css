@@ -93,7 +93,7 @@ footer a {
   justify-self: end;
   padding: 14px 20px;
   border: 1px solid var(--navy);
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: .11em;
   text-transform: uppercase;
   text-align: center;
@@ -1296,6 +1296,7 @@ footer small {
     border: 1px solid var(--navy);
     border-bottom: 1px solid var(--navy);
     text-align: center;
+    font-size: 10px;
   }
 
   .hero {
@@ -1448,6 +1449,7 @@ footer small {
   .mobile-nav a:last-child {
     margin-top: 14px;
     padding: 14px 16px;
+    font-size: 10px;
   }
 
   .logo { font-size: 22px; }
