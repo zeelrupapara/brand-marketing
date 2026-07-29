@@ -1320,9 +1320,27 @@ footer small {
     padding-bottom: 40px;
   }
 
+  /* Mobile: every content image shows in full — natural ratio, nothing cropped */
   .hero-image,
-  .hero-image img {
-    min-height: 420px;
+  .hero-image picture,
+  .hero-image img,
+  .hero-image picture img,
+  .story > picture,
+  .story > img,
+  .story > picture img,
+  .results > picture,
+  .results > img,
+  .results > picture img {
+    min-height: 0;
+    max-height: none;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .about-portrait {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .intro {
@@ -1346,7 +1364,8 @@ footer small {
   }
 
   .story > div {
-    margin: -48px var(--page-x) 0;
+    margin: 0;
+    padding: clamp(36px, 6vw, 56px) var(--page-x);
   }
 
   .service-list article {
@@ -1359,11 +1378,6 @@ footer small {
   .service-list article p { grid-column: 1 / -1; }
 
   .results { grid-template-columns: 1fr; }
-
-  .results > img {
-    min-height: 480px;
-    max-height: 560px;
-  }
 
   .results > div {
     padding-left: var(--page-x);
@@ -1496,9 +1510,6 @@ footer small {
 
   .location { flex-direction: column; gap: 8px; }
 
-  .hero-image,
-  .hero-image img { min-height: 320px; }
-
   .hero-image figcaption {
     width: calc(100% - (var(--page-x) * 2));
     right: var(--page-x);
@@ -1528,11 +1539,8 @@ footer small {
     padding-right: 0;
   }
 
-  .story > img,
-  .story > picture img { height: 320px; }
-
   .story > div {
-    margin: -28px var(--page-x) 0;
+    margin: 0;
     padding: 32px var(--page-x);
   }
 
@@ -1545,11 +1553,6 @@ footer small {
   .rule-list h3 {
     margin: 10px 0 12px;
     font-size: 20px;
-  }
-
-  .results > img {
-    min-height: 280px;
-    max-height: 360px;
   }
 
   .results > div {
