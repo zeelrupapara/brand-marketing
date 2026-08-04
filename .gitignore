@@ -4,3 +4,5 @@
 .env.*
 playwright-screenshots/
 node_modules/
+.gstack/
+.playwright-mcp/
