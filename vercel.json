@@ -27,7 +27,7 @@
       ]
     },
     {
-      "source": "/(articles|why-digital-presence-consistency-matters)/(.*)",
+      "source": "/(articles|why-digital-presence-consistency-matters|organic-social-media-management)/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
