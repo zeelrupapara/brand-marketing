@@ -119,3 +119,50 @@ window.addEventListener("load", () => {
     scrollToId(id, true);
   });
 });
+
+/* ---- Inquiry form: validate, hand off to the mail client, confirm ---- */
+const inquiry = document.getElementById("inquiry-form");
+if (inquiry) {
+  inquiry.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!inquiry.checkValidity()) {
+      inquiry.reportValidity();
+      return;
+    }
+    const data = new FormData(inquiry);
+    const lines = [];
+    for (const [key, value] of data.entries()) {
+      const v = String(value).trim();
+      if (v) lines.push(`${key}: ${v}`);
+    }
+    const to = "inquire@haleymaebrand.com";
+    const subject = encodeURIComponent("Brand Review Request");
+    const body = encodeURIComponent(lines.join("\n"));
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    inquiry.classList.add("is-sent");
+    inquiry.querySelector(".form-success")?.scrollIntoView({
+      block: "nearest",
+      behavior: prefersReducedMotion() ? "auto" : "smooth",
+    });
+  });
+}
+
+/* ---- Gentle reveal on scroll ---- */
+if ("IntersectionObserver" in window && !prefersReducedMotion()) {
+  const targets = document.querySelectorAll(
+    ".section .wrap > *, .hero-copy, .hero-visual"
+  );
+  targets.forEach((el) => el.classList.add("reveal"));
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
+  );
+  targets.forEach((el) => io.observe(el));
+}
