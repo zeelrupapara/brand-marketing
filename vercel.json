@@ -27,7 +27,7 @@
       ]
     },
     {
-      "source": "/(articles|why-digital-presence-consistency-matters|organic-social-media-management|brand-consistency)/(.*)",
+      "source": "/(articles|why-digital-presence-consistency-matters|organic-social-media-management|brand-consistency|how-to-maintain-brand-voice)/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
