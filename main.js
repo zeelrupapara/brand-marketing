@@ -146,3 +146,11 @@ if (inquiry) {
     });
   });
 }
+
+/* ---- Header over the hero: turn solid once the page scrolls ---- */
+const overHeader = document.querySelector(".topbar.over");
+if (overHeader) {
+  const update = () => overHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+}
