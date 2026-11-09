@@ -43,7 +43,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20261109c">
+  <link rel="stylesheet" href="styles.css?v=20261109d">
 
   <script type="application/ld+json">
   {
@@ -174,8 +174,16 @@
 
     <section class="section shade why" id="why" aria-labelledby="why-heading">
       <div class="wrap">
-        <p class="kicker">Why clients work with us</p>
-        <h2 id="why-heading">Personal attention. Good communication. Work that gets done.</h2>
+        <div class="section-head">
+          <div>
+            <p class="kicker">Why clients work with us</p>
+            <h2 id="why-heading">Personal attention. Good communication. Work that gets done.</h2>
+          </div>
+          <div class="copy">
+            <p>We can work with your employees, coordinate outside specialists, or help organize projects that have been sitting on your to-do list.</p>
+            <p class="statement">Our goal is simple: make your job easier and help your company present itself well.</p>
+          </div>
+        </div>
         <ul class="value-row">
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c.8-3.6 3.9-5.5 7.5-5.5s6.7 1.9 7.5 5.5"/></svg>
@@ -187,17 +195,11 @@
             <p>We’re comfortable starting either way.</p>
           </li>
         </ul>
-        <div class="closing">
-          <div class="copy">
-            <p>We can work with your employees, coordinate outside specialists, or help organize projects that have been sitting on your to-do list.</p>
-            <p class="statement">Our goal is simple: make your job easier and help your company present itself well.</p>
-          </div>
-          <picture>
-            <source type="image/avif" srcset="images/originals/laptop-700.avif 700w, images/originals/laptop-900.avif 900w" sizes="(max-width: 980px) 100vw, 56vw">
-            <source type="image/webp" srcset="images/originals/laptop-700.webp 700w, images/originals/laptop-900.webp 900w" sizes="(max-width: 980px) 100vw, 56vw">
-            <img src="images/laptop-700.jpg" srcset="images/laptop-700.jpg 700w, images/laptop-900.jpg 900w" sizes="(max-width: 980px) 100vw, 56vw" alt="Workspace with laptop and brand materials" width="1080" height="810" loading="lazy" decoding="async">
-          </picture>
-        </div>
+        <picture class="why-photo">
+          <source type="image/avif" srcset="images/originals/laptop-700.avif 700w, images/originals/laptop-900.avif 900w" sizes="(max-width: 980px) 100vw, 80vw">
+          <source type="image/webp" srcset="images/originals/laptop-700.webp 700w, images/originals/laptop-900.webp 900w" sizes="(max-width: 980px) 100vw, 80vw">
+          <img src="images/laptop-700.jpg" srcset="images/laptop-700.jpg 700w, images/laptop-900.jpg 900w" sizes="(max-width: 980px) 100vw, 80vw" alt="Workspace with laptop and brand materials" width="1080" height="810" loading="lazy" decoding="async">
+        </picture>
       </div>
     </section>
 
@@ -402,6 +404,6 @@
     </div>
   </footer>
 
-  <script src="main.js?v=20261109c" defer></script>
+  <script src="main.js?v=20261109d" defer></script>
 </body>
 </html>
