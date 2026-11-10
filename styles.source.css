@@ -448,11 +448,14 @@ h3 { font-size: 1rem; line-height: 1.4; letter-spacing: -.005em; font-weight: 60
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
-.steps li { padding: 28px 26px 30px; min-height: 280px; background: var(--green); color: #fff; border-radius: 12px; display: grid; align-content: start; gap: 8px; }
+.steps li { position: relative; padding: 28px 26px 30px; min-height: 300px; background: var(--green); color: #fff; border-radius: 12px; display: grid; align-content: start; gap: 8px; overflow: hidden; }
+.steps li::before { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 90% at 100% 0%, rgba(255,255,255,.08), transparent 60%); pointer-events: none; }
 .steps li:nth-child(even) { background: #4a5a53; }
-.steps .num { font-size: clamp(2rem, 2.6vw, 2.6rem); font-weight: 400; letter-spacing: -.03em; line-height: 1; color: #fff; margin-bottom: 28px; }
-.steps h3 { font-size: 1rem; color: #fff; font-weight: 500; }
-.steps p { color: #d4ded8; font-size: 15px; line-height: 1.6; }
+.steps .ico { position: relative; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16); margin-bottom: 40px; }
+.steps .ico svg { width: 22px; height: 22px; display: block; }
+.steps .num { position: absolute; top: 26px; right: 26px; font-size: 13px; font-weight: 500; letter-spacing: .08em; line-height: 1; color: rgba(255,255,255,.55); margin: 0; }
+.steps h3 { position: relative; font-size: 1.05rem; color: #fff; font-weight: 500; }
+.steps p { position: relative; color: #d4ded8; font-size: 15px; line-height: 1.6; }
 
 /* FAQ */
 
@@ -753,7 +756,8 @@ footer .bottom {
   .about-grid { gap: 24px; }
   .about-grid .copy { margin-top: 14px; }
   .steps { margin-top: 28px; gap: 12px; }
-  .steps .num { font-size: 1.7rem; margin-bottom: 16px; }
+  .steps .ico { width: 42px; height: 42px; margin-bottom: 24px; }
+  .steps .num { top: 22px; right: 22px; }
   .faq .two-col { gap: 20px; }
   .faq-list summary { padding: 16px 40px 16px 0; font-size: 1rem; }
   .article-grid { gap: 36px; }
