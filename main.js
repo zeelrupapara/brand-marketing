@@ -154,3 +154,16 @@ if (overHeader) {
   update();
   window.addEventListener("scroll", update, { passive: true });
 }
+
+
+// Gentle scroll reveals
+(() => {
+  if (prefersReducedMotion() || !("IntersectionObserver" in window)) return;
+  const sel = ".section-head, .pillars > li, .svc-grid > li, .steps > li, .about-grid > *, .faq-list, .article-tile, .approach .copy, .approach .figure picture, .who .statement, .cta .wrap > *";
+  const els = Array.from(document.querySelectorAll(sel));
+  els.forEach((el) => { el.classList.add("reveal"); el.dataset.reveal = "1"; });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+  els.forEach((el) => io.observe(el));
+})();
