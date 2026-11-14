@@ -148,7 +148,7 @@ if (inquiry) {
 }
 
 /* ---- Header over the hero: turn solid once the page scrolls ---- */
-const overHeader = document.querySelector(".topbar.over");
+const overHeader = document.querySelector(".topbar");
 if (overHeader) {
   const update = () => overHeader.classList.toggle("is-scrolled", window.scrollY > 24);
   update();
@@ -159,11 +159,20 @@ if (overHeader) {
 // Gentle scroll reveals
 (() => {
   if (prefersReducedMotion() || !("IntersectionObserver" in window)) return;
-  const sel = ".section-head, .pillars > li, .svc-grid > li, .steps > li, .about-grid > *, .faq-list, .article-tile, .approach .copy, .approach .figure picture, .who .statement, .cta .wrap > *";
+  const sel = ".section-head, .pillars > li, .svc > li, .timeline > li, .about-grid > *, .faq-list, .article-grid > li, .approach .copy, .approach .figure picture, .who .statement, .who .intro-sub, .cta .wrap > *";
   const els = Array.from(document.querySelectorAll(sel));
   els.forEach((el) => { el.classList.add("reveal"); el.dataset.reveal = "1"; });
   const io = new IntersectionObserver((entries) => {
     entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
   }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
   els.forEach((el) => io.observe(el));
+})();
+
+// Process line draws in when the timeline comes into view
+(() => {
+  const tl = document.getElementById("timeline");
+  if (!tl) return;
+  if (prefersReducedMotion() || !("IntersectionObserver" in window)) { tl.classList.add("in"); return; }
+  const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isIntersecting) { tl.classList.add("in"); io.disconnect(); } }); }, { threshold: 0.3 });
+  io.observe(tl);
 })();

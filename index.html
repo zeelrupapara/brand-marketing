@@ -43,7 +43,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20261114c">
+  <link rel="stylesheet" href="styles.css?v=20261114d">
 
   <script type="application/ld+json">
   {
@@ -120,7 +120,7 @@
   </script>
 </head>
 <body>
-  <header class="topbar over" id="site-header">
+  <header class="topbar" id="site-header">
     <a class="logo" href="#top" aria-label="Haley Mae, home">Haley Mae<span>Brand Management</span></a>
     <nav aria-label="Main navigation">
       <a href="#approach">Approach</a>
@@ -130,9 +130,7 @@
       <a href="articles/">Articles</a>
       <a class="btn" href="#contact">Let’s Talk</a>
     </nav>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-      <span></span>
-    </button>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span></button>
   </header>
 
   <div class="nav-backdrop" id="nav-backdrop" hidden></div>
@@ -154,92 +152,63 @@
           <h1 id="hero-heading">Your business deserves to be <em>seen</em> at its best.</h1>
           <p class="lead">You’ve worked hard to build your company. We help make sure the way people see it online reflects the business you’ve built.</p>
           <div class="actions">
-            <a class="btn" href="#contact">Let’s Talk</a>
-            <a class="btn ghost" href="#services">What we can help with</a>
+            <a class="btn primary" href="#contact">Let’s Talk</a>
+            <a class="arrow-link" href="#services">What we can help with</a>
           </div>
+          <p class="proof"><span><b>Based in Atlanta, Georgia</b></span><span>Working with businesses nationwide</span></p>
         </div>
 
-        <div class="scene" aria-hidden="true">
-          <div class="card float post">
-            <div class="row"><span class="avatar"><img src="images/haley-320.jpg" alt="" width="60" height="60" loading="eager"></span><span style="flex:1"><span class="bar w1"></span><span class="bar w2"></span></span></div>
-            <div class="pic"><img src="images/originals/laptop-700.jpg" alt="" width="700" height="438"></div>
-            <span class="bar w3"></span>
-            <div class="acts" style="margin-top:12px">
-              <svg class="heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8 3.1 4.5 6.6 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.5 0 5.7 3.5 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v10H9l-5 4z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12v7h16v-7M12 3v12M8 7l4-4 4 4"/></svg>
-            </div>
-          </div>
-
-          <div class="float check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
-
-          <div class="card float bubble"><i></i><i></i><i></i></div>
-
-          <div class="float cam-stage">
-            <div class="cam-slot">
-              <div class="print">
-                <img src="images/hero-800.jpg" alt="" width="800" height="500">
-                <span class="cap">Atlanta, Georgia</span>
+        <div class="devices" aria-hidden="true">
+          <div class="laptop">
+            <div class="lid">
+              <div class="screen mini">
+                <div class="mini-nav"><b>Haley Mae</b><i><span></span><span></span><span></span><span></span></i></div>
+                <div class="mini-hero">
+                  <div>
+                    <h4>Your business deserves to be <em>seen</em> at its best.</h4>
+                    <div class="l"><span></span><span></span><span></span></div>
+                    <span class="b">Let’s Talk</span>
+                  </div>
+                  <img src="images/hero-800.jpg" alt="" width="800" height="500" loading="eager" decoding="async">
+                </div>
+                <div class="mini-row">
+                  <div><b>Brand Management</b><span></span><span></span></div>
+                  <div><b>Social Media</b><span></span><span></span></div>
+                  <div><b>Website Content</b><span></span><span></span></div>
+                </div>
               </div>
             </div>
-            <svg class="cam" viewBox="0 0 320 200" fill="none">
-              <defs>
-                <linearGradient id="cBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3340"/><stop offset=".5" stop-color="#151c26"/><stop offset="1" stop-color="#0a0f16"/></linearGradient>
-                <linearGradient id="cTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset=".35" stop-color="#d3d9df"/><stop offset=".7" stop-color="#aeb7c0"/><stop offset="1" stop-color="#7f8a95"/></linearGradient>
-                <linearGradient id="cRing" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f4f6"/><stop offset=".4" stop-color="#9aa5b0"/><stop offset=".6" stop-color="#dfe5ea"/><stop offset="1" stop-color="#6c7883"/></linearGradient>
-                <radialGradient id="cGlass" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#2f4b6a"/><stop offset=".45" stop-color="#0c1726"/><stop offset="1" stop-color="#02050a"/></radialGradient>
-                <radialGradient id="cGlow" cx=".35" cy=".3" r=".5"><stop offset="0" stop-color="#8fc8f5" stop-opacity=".55"/><stop offset="1" stop-color="#8fc8f5" stop-opacity="0"/></radialGradient>
-                <pattern id="cLeather" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#ffffff" fill-opacity=".05"/><circle cx="3" cy="3" r=".7" fill="#000000" fill-opacity=".25"/></pattern>
-              </defs>
-              <rect x="20" y="52" width="280" height="136" rx="18" fill="url(#cBody)"/>
-              <rect x="20" y="52" width="280" height="136" rx="18" fill="url(#cLeather)"/>
-              <rect x="20" y="52" width="280" height="136" rx="18" stroke="#000" stroke-opacity=".5"/>
-              <rect x="20" y="40" width="280" height="36" rx="10" fill="url(#cTop)"/>
-              <rect x="20" y="40" width="280" height="36" rx="10" stroke="#5f6b76" stroke-opacity=".6"/>
-              <rect x="24" y="43" width="272" height="2" rx="1" fill="#fff" fill-opacity=".7"/>
-              <rect x="112" y="38" width="96" height="6" rx="3" fill="#0a0f16"/>
-              <rect x="128" y="26" width="64" height="16" rx="4" fill="url(#cTop)" stroke="#5f6b76" stroke-opacity=".6"/>
-              <rect x="132" y="22" width="56" height="6" rx="2" fill="#30394a"/>
-              <circle cx="262" cy="58" r="12" fill="url(#cRing)" stroke="#55606b"/><circle cx="262" cy="58" r="7" fill="#1a222c"/>
-              <rect x="226" y="50" width="20" height="8" rx="4" fill="#cc3b4e"/>
-              <circle cx="58" cy="58" r="10" fill="url(#cRing)" stroke="#55606b"/>
-              <rect x="42" y="84" width="40" height="22" rx="5" fill="#0d1620" stroke="#3a4552"/>
-              <rect x="46" y="88" width="32" height="14" rx="3" fill="#1d3b5c"/><rect x="48" y="90" width="14" height="4" rx="2" fill="#fff" fill-opacity=".35"/>
-              <circle cx="166" cy="124" r="58" fill="#0a0f16"/>
-              <circle cx="166" cy="124" r="54" fill="url(#cRing)"/>
-              <circle cx="166" cy="124" r="47" fill="#141a22"/>
-              <circle cx="166" cy="124" r="44" fill="url(#cRing)" opacity=".9"/>
-              <circle cx="166" cy="124" r="40" fill="#0b1016"/>
-              <circle cx="166" cy="124" r="35" fill="url(#cGlass)"/>
-              <circle class="shutter" cx="166" cy="124" r="16" fill="#02050a"/>
-              <circle cx="166" cy="124" r="35" fill="url(#cGlow)"/>
-              <ellipse cx="150" cy="106" rx="9" ry="5" fill="#fff" fill-opacity=".45" transform="rotate(-30 150 106)"/>
-              <circle cx="166" cy="124" r="40" stroke="#4db3f2" stroke-opacity=".45"/>
-              <path d="M110 124a56 56 0 0 1 56-56" stroke="#fff" stroke-opacity=".35" stroke-width="2"/>
-              <rect x="240" y="96" width="44" height="40" rx="6" fill="#000" fill-opacity=".25"/>
-              <rect x="246" y="102" width="32" height="28" rx="4" fill="url(#cLeather)" stroke="#000" stroke-opacity=".4"/>
-            </svg>
+            <div class="base"></div><div class="foot"></div>
           </div>
 
-          <div class="float pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s6-6.2 6-11a6 6 0 1 0-12 0c0 4.8 6 11 6 11z"/><circle cx="12" cy="10" r="2.2"/></svg></div>
-
-          <div class="card float browser">
-            <div class="chrome"><i></i><i></i><i></i></div>
-            <div class="body">
-              <span class="hd"></span>
-              <div class="img"><img src="images/originals/strategy-900.jpg" alt="" width="900" height="450"></div>
-              <span class="bar w3"></span><span class="bar w2"></span>
+          <div class="phone">
+            <div class="frame">
+              <div class="screen">
+                <span class="notch"></span>
+                <div class="post">
+                  <div class="head">
+                    <img src="images/haley-320.jpg" alt="" width="320" height="341" loading="eager" decoding="async">
+                    <div><b>Haley Atenhan</b><small>Founder, Haley Mae</small><small>Atlanta, Georgia</small></div>
+                  </div>
+                  <div class="txt"><span></span><span></span><span></span></div>
+                  <div class="card">
+                    <img src="images/originals/laptop-700.jpg" alt="" width="700" height="438" loading="eager" decoding="async">
+                    <b>How Brand Consistency Builds Trust</b>
+                  </div>
+                  <div class="acts">
+                    <svg class="on" viewBox="0 0 24 24" fill="currentColor"><path d="M2 10h4v11H2zM9 21V10l4-8c1.7 0 2.5 1.2 2.5 2.6L15 9h5.3c1.3 0 2.2 1.2 1.9 2.4l-1.6 7.2c-.3 1.4-1.4 2.4-2.8 2.4z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H9l-5 4z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12v7h16v-7M12 3v12M8 7l4-4 4 4"/></svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="live"><i></i>Published</div>
         </div>
       </div>
     </section>
-
-    <div class="strip" aria-label="Location">
-      <div class="wrap">
-        <span>Based in Atlanta, Georgia</span><span class="dot" aria-hidden="true"></span><span>Working with businesses nationwide</span>
-      </div>
-    </div>
 
     <section class="section who" aria-label="Who we are">
       <div class="wrap">
@@ -251,80 +220,57 @@
       </div>
     </section>
 
-    <section class="section tight rule why" id="why" aria-labelledby="why-heading">
+    <section class="section rule why" id="why" aria-labelledby="why-heading">
       <div class="wrap">
-        <div class="section-head center">
+        <div class="section-head">
           <div>
             <p class="kicker">Why clients work with us</p>
             <h2 id="why-heading">Personal attention. Good communication. <em>Work that gets done.</em></h2>
           </div>
           <p class="lead">Our goal is simple: make your job easier and help your company present itself well.</p>
         </div>
-        <ul class="pillars" style="margin-top:0">
+        <ul class="pillars">
           <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c.8-3.6 3.9-5.5 7.5-5.5s6.7 1.9 7.5 5.5"/></svg></span>
+            <span class="index">01</span>
             <h3>We keep things personal.</h3>
             <p>When you work with Haley Mae, you communicate directly with Haley. We take the time to learn your business and stay involved in the details.</p>
           </li>
           <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5h16v9H9.5L5.5 19v-3.5H4z"/><path d="M8 10.5h8M8 13h5"/></svg></span>
+            <span class="index">02</span>
             <h3>You don’t need to have everything figured out before calling us.</h3>
             <p>Some clients know exactly what they want. Others just know their marketing needs attention.</p>
             <p>We’re comfortable starting either way.</p>
           </li>
           <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <span class="index">03</span>
             <h3>We can work with your employees, coordinate outside specialists, or help organize projects that have been sitting on your to-do list.</h3>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="section services" id="services" aria-labelledby="services-heading">
+    <section class="section soft services" id="services" aria-labelledby="services-heading">
       <div class="wrap">
-        <div class="section-head center">
+        <div class="section-head">
           <div>
             <p class="kicker">Services</p>
             <h2 id="services-heading">What we can <em>help with.</em></h2>
           </div>
+          <p class="right"><a class="arrow-link" href="#contact">Let’s Talk</a></p>
         </div>
-        <ul class="svc-grid">
-          <li class="featured">
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
-            <h3>Brand Management</h3>
-            <p>We help make sure your company’s messaging, photographs, social media, and other marketing materials work well together. When something needs updating, we help get it done.</p>
-          </li>
-          <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9.5L5 20.5v-4H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z" fill="currentColor" fill-opacity=".18"/><circle cx="8.5" cy="11" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="11" r="1.1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="11" r="1.1" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Social Media</h3>
-            <p>We create and manage organic content for LinkedIn and Instagram. That includes planning posts, writing copy, coordinating images, and sharing updates that give people a better look at your business.</p>
-          </li>
-          <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5" fill="currentColor" fill-opacity=".18"/><path d="M3 9h18"/><path d="M7 13h6M7 16h10"/></svg></span>
-            <h3>Website Content &amp; Coordination</h3>
-            <p>We help improve website writing, photography, organization, and overall presentation. If your site needs to be built or redesigned, we can work with a website specialist to manage the project.</p>
-          </li>
-          <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5h3.2l1.6-2.5h6.4l1.6 2.5H20a1 1 0 0 1 1 1V18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a1 1 0 0 1 1-1z" fill="currentColor" fill-opacity=".18"/><circle cx="12" cy="13.5" r="3.4"/><circle cx="12" cy="13.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Photography &amp; Video</h3>
-            <p>We help plan and coordinate photography and video that show your business as it really is—your people, your workplace, your projects, and the work you’re proud of.</p>
-          </li>
-          <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4" fill="currentColor" fill-opacity=".18"/><path d="M4.5 20c.6-3.8 3.6-6 7.5-6s6.9 2.2 7.5 6"/><path d="M18 4.5l1.3 1.3M6 4.5L4.7 5.8"/></svg></span>
-            <h3>Executive Branding</h3>
-            <p>We work with owners and executives on professional biographies, photography, LinkedIn profiles, and other materials that help them introduce themselves and communicate with confidence.</p>
-          </li>
-          <li>
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.7-5.6M20 12a8 8 0 0 1-13.7 5.6"/><path d="M17.7 3v3.4h-3.4M6.3 21v-3.4h3.4"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Ongoing Brand Support</h3>
-            <p>As your business changes, we’ll help keep your information, messaging, images, and content up to date.</p>
-          </li>
+        <ul class="svc">
+          <li><span class="index">01</span><h3>Brand Management</h3><p>We help make sure your company’s messaging, photographs, social media, and other marketing materials work well together. When something needs updating, we help get it done.</p><a class="go" href="#contact" aria-label="Ask about Brand Management"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><span class="index">02</span><h3>Social Media</h3><p>We create and manage organic content for LinkedIn and Instagram. That includes planning posts, writing copy, coordinating images, and sharing updates that give people a better look at your business.</p><a class="go" href="#contact" aria-label="Ask about Social Media"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><span class="index">03</span><h3>Website Content &amp; Coordination</h3><p>We help improve website writing, photography, organization, and overall presentation. If your site needs to be built or redesigned, we can work with a website specialist to manage the project.</p><a class="go" href="#contact" aria-label="Ask about Website Content and Coordination"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><span class="index">04</span><h3>Photography &amp; Video</h3><p>We help plan and coordinate photography and video that show your business as it really is—your people, your workplace, your projects, and the work you’re proud of.</p><a class="go" href="#contact" aria-label="Ask about Photography and Video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><span class="index">05</span><h3>Executive Branding</h3><p>We work with owners and executives on professional biographies, photography, LinkedIn profiles, and other materials that help them introduce themselves and communicate with confidence.</p><a class="go" href="#contact" aria-label="Ask about Executive Branding"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><span class="index">06</span><h3>Ongoing Brand Support</h3><p>As your business changes, we’ll help keep your information, messaging, images, and content up to date.</p><a class="go" href="#contact" aria-label="Ask about Ongoing Brand Support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
         </ul>
         <p class="note">Every engagement is tailored to the client. Outside development, photography, and production expenses are included only when specified in the agreed scope.</p>
       </div>
     </section>
 
-    <section class="section dark-band approach" id="approach" aria-labelledby="approach-heading">
+    <section class="section band approach" id="approach" aria-labelledby="approach-heading">
       <div class="wrap">
         <div>
           <p class="kicker">Our approach</p>
@@ -339,46 +285,36 @@
         </div>
         <div class="figure">
           <picture>
-            <source type="image/avif" srcset="images/originals/strategy-900.avif"><source type="image/webp" srcset="images/originals/strategy-900.webp">
-            <img src="images/originals/strategy-900.jpg" alt="Brand strategy and positioning documents laid out on a desk" width="900" height="450" loading="lazy" decoding="async">
-          </picture>
+              <source type="image/avif" srcset="images/originals/laptop-900.avif"><source type="image/webp" srcset="images/originals/laptop-900.webp">
+              <img src="images/originals/laptop-900.jpg" alt="Workspace with laptop and brand materials" width="900" height="602" loading="lazy" decoding="async">
+            </picture>
           <picture>
-            <source type="image/avif" srcset="images/originals/laptop-900.avif"><source type="image/webp" srcset="images/originals/laptop-900.webp">
-            <img src="images/originals/laptop-900.jpg" alt="Workspace with laptop and brand materials" width="900" height="602" loading="lazy" decoding="async">
-          </picture>
-          <picture>
-            <source type="image/avif" srcset="images/hero-800.avif"><source type="image/webp" srcset="images/hero-800.webp">
-            <img src="images/hero-800.jpg" alt="Office overlooking the Atlanta skyline" width="800" height="500" loading="lazy" decoding="async">
-          </picture>
+              <source type="image/avif" srcset="images/originals/strategy-900.avif"><source type="image/webp" srcset="images/originals/strategy-900.webp">
+              <img src="images/originals/strategy-900.jpg" alt="Brand strategy and positioning documents laid out on a desk" width="900" height="450" loading="lazy" decoding="async">
+            </picture>
         </div>
       </div>
     </section>
 
     <section class="section how" id="process" aria-labelledby="process-heading">
       <div class="wrap">
-        <div class="side">
-          <p class="kicker">How we work</p>
-          <h2 id="process-heading">A straightforward <em>process.</em></h2>
-          <a class="btn" href="#contact">Let’s Talk</a>
+        <div class="section-head">
+          <div>
+            <p class="kicker">How we work</p>
+            <h2 id="process-heading">A straightforward <em>process.</em></h2>
+          </div>
+          <p class="right"><a class="btn" href="#contact">Let’s Talk</a></p>
         </div>
-        <ol class="steps">
-          <li><details open><summary><span class="num">01</span><h3>Let’s talk.</h3><span class="chev" aria-hidden="true"></span></summary>
-            <div class="body"><div><p>Tell us about your business, what you’re working on, and where you could use some help.</p><div class="bar" style="--p:25%;margin-top:18px"></div></div>
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14h44v30H26l-10 8v-8h-6z"/><path d="M20 24h24M20 32h14"/></svg></div></details></li>
-          <li><details><summary><span class="num">02</span><h3>We’ll make a plan.</h3><span class="chev" aria-hidden="true"></span></summary>
-            <div class="body"><div><p>We’ll review what you have, discuss what needs attention, and outline the services, priorities, and costs.</p><div class="bar" style="--p:50%;margin-top:18px"></div></div>
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="12" width="40" height="42" rx="4"/><path d="M12 24h40M22 8v8M42 8v8M22 36l6 6 12-12"/></svg></div></details></li>
-          <li><details><summary><span class="num">03</span><h3>We get to work.</h3><span class="chev" aria-hidden="true"></span></summary>
-            <div class="body"><div><p>We manage the agreed projects, create content, coordinate with the right people, and keep you informed.</p><div class="bar" style="--p:75%;margin-top:18px"></div></div>
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 12l12 12-26 26H14V38z"/><path d="M34 18l12 12M12 56h40"/></svg></div></details></li>
-          <li><details><summary><span class="num">04</span><h3>We stay involved.</h3><span class="chev" aria-hidden="true"></span></summary>
-            <div class="body"><div><p>For ongoing clients, we continue managing content, making updates, and helping your brand keep up with your business.</p><div class="bar" style="--p:100%;margin-top:18px"></div></div>
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 32a20 20 0 0 1 34-14M52 32a20 20 0 0 1-34 14"/><path d="M46 10v8h-8M18 54v-8h8"/></svg></div></details></li>
+        <ol class="timeline" id="timeline">
+          <li><span class="dot"></span><span class="index">Step 01</span><h3>Let’s talk.</h3><p>Tell us about your business, what you’re working on, and where you could use some help.</p></li>
+          <li><span class="dot"></span><span class="index">Step 02</span><h3>We’ll make a plan.</h3><p>We’ll review what you have, discuss what needs attention, and outline the services, priorities, and costs.</p></li>
+          <li><span class="dot"></span><span class="index">Step 03</span><h3>We get to work.</h3><p>We manage the agreed projects, create content, coordinate with the right people, and keep you informed.</p></li>
+          <li><span class="dot"></span><span class="index">Step 04</span><h3>We stay involved.</h3><p>For ongoing clients, we continue managing content, making updates, and helping your brand keep up with your business.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-heading">
+    <section class="section soft about" id="about" aria-labelledby="about-heading">
       <div class="wrap about-grid">
         <figure>
           <picture>
@@ -386,6 +322,7 @@
             <source type="image/webp" srcset="images/haley-320.webp 320w, images/haley.webp 640w" sizes="(max-width: 980px) 420px, 460px">
             <img src="images/haley.jpg" srcset="images/haley-320.jpg 320w, images/haley.jpg 640w" sizes="(max-width: 980px) 420px, 460px" alt="Haley Atenhan" width="640" height="682" loading="lazy" decoding="async">
           </picture>
+          <figcaption><span>Haley Atenhan</span><span>Founder, Haley Mae</span></figcaption>
         </figure>
         <div>
           <p class="kicker">About Haley</p>
@@ -410,6 +347,7 @@
         <div class="side">
           <p class="kicker">FAQ</p>
           <h2 id="faq-heading">Frequently asked <em>questions</em></h2>
+          <a class="btn ghost" href="#contact">Let’s Talk</a>
         </div>
         <div class="faq-list">
           <details><summary>What does Haley Mae do?</summary><p>We help businesses manage their brand presentation, social media, website content, photography, executive profiles, and related marketing projects.</p></details>
@@ -426,40 +364,46 @@
 
     <section class="section rule articles-row" aria-labelledby="articles-heading">
       <div class="wrap">
-        <div class="section-head split">
+        <div class="section-head">
           <div>
             <p class="kicker">Articles</p>
             <h2 id="articles-heading">Notes on brand, content, and <em>presentation.</em></h2>
           </div>
-          <p style="justify-self:end"><a class="arrow-link" href="articles/">All articles</a></p>
+          <p class="right"><a class="arrow-link" href="articles/">All articles</a></p>
         </div>
         <ul class="article-grid">
           <li><a class="article-tile" href="how-to-maintain-brand-voice/">
-            <picture><source type="image/avif" srcset="images/originals/laptop-700.avif"><source type="image/webp" srcset="images/originals/laptop-700.webp"><img src="images/originals/laptop-700.jpg" alt="" width="700" height="468" loading="lazy" decoding="async"></picture>
+            <picture>
+              <source type="image/avif" srcset="images/originals/laptop-700.avif"><source type="image/webp" srcset="images/originals/laptop-700.webp">
+              <img src="images/originals/laptop-700.jpg" alt="" width="700" height="438" loading="lazy" decoding="async">
+            </picture>
             <time datetime="2026-10-31">October 31, 2026</time>
             <h3>How to Maintain Your Brand Voice Across Digital Platforms</h3>
             <p>Clear guidelines, aligned messaging, and regular oversight keep your brand voice consistent everywhere people find you.</p>
-            <span class="arrow-link">Read</span>
           </a></li>
           <li><a class="article-tile" href="brand-consistency/">
-            <picture><source type="image/avif" srcset="images/originals/strategy-900.avif"><source type="image/webp" srcset="images/originals/strategy-900.webp"><img src="images/originals/strategy-900.jpg" alt="" width="900" height="450" loading="lazy" decoding="async"></picture>
+            <picture>
+              <source type="image/avif" srcset="images/originals/strategy-900.avif"><source type="image/webp" srcset="images/originals/strategy-900.webp">
+              <img src="images/originals/strategy-900.jpg" alt="" width="900" height="450" loading="lazy" decoding="async">
+            </picture>
             <time datetime="2026-09-19">September 19, 2026</time>
             <h3>How Brand Consistency Builds Trust</h3>
             <p>Your website, social accounts, and marketing materials should all feel like they belong to the same company. Here is where to start.</p>
-            <span class="arrow-link">Read</span>
           </a></li>
           <li><a class="article-tile" href="organic-social-media-management/">
-            <picture><source type="image/avif" srcset="images/hero-800.avif"><source type="image/webp" srcset="images/hero-800.webp"><img src="images/hero-800.jpg" alt="" width="800" height="500" loading="lazy" decoding="async"></picture>
+            <picture>
+              <source type="image/avif" srcset="images/hero-800.avif"><source type="image/webp" srcset="images/hero-800.webp">
+              <img src="images/hero-800.jpg" alt="" width="800" height="500" loading="lazy" decoding="async">
+            </picture>
             <time datetime="2026-08-27">August 27, 2026</time>
             <h3>What Good Organic Social Media Looks Like</h3>
             <p>A useful social presence does not need to be loud. It needs to be recognizable, honest, and worth following.</p>
-            <span class="arrow-link">Read</span>
           </a></li>
         </ul>
       </div>
     </section>
 
-    <section class="section dark-band cta" id="contact" aria-labelledby="contact-heading">
+    <section class="section band cta" id="contact" aria-labelledby="contact-heading">
       <div class="wrap">
         <p class="kicker">Contact</p>
         <h2 id="contact-heading">Tell us about <em>your business.</em></h2>
@@ -469,15 +413,15 @@
           <p>Tell us a little about your business and what you’d like to accomplish.</p>
         </div>
         <div class="actions">
-          <a class="btn" href="mailto:inquire@haleymaebrand.com?subject=Introductory%20Conversation">Request an Introductory Conversation</a>
-          <a class="btn ghost" href="mailto:inquire@haleymaebrand.com">inquire@haleymaebrand.com</a>
+          <a class="btn light" href="mailto:inquire@haleymaebrand.com?subject=Introductory%20Conversation">Request an Introductory Conversation</a>
+          <a class="btn outline-light" href="mailto:inquire@haleymaebrand.com">inquire@haleymaebrand.com</a>
         </div>
-        <p class="meta">Atlanta, Georgia&nbsp;|&nbsp;Serving clients nationwide</p>
+        <p class="meta"><span>Atlanta, Georgia</span><span>Serving clients nationwide</span></p>
       </div>
     </section>
   </main>
 
-  <footer>
+<footer>
     <div class="wrap">
       <div>
         <a class="logo" href="#top" aria-label="Haley Mae, home">Haley Mae<span>Brand Management</span></a>
@@ -512,6 +456,6 @@
     </div>
   </footer>
 
-  <script src="main.js?v=20261114c" defer></script>
+  <script src="main.js?v=20261114d" defer></script>
 </body>
 </html>
