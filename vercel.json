@@ -27,7 +27,7 @@
       ]
     },
     {
-      "source": "/(articles|why-digital-presence-consistency-matters|organic-social-media-management|brand-consistency|how-to-maintain-brand-voice)/(.*)",
+      "source": "/articles/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -70,6 +70,48 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/brand-consistency",
+      "destination": "/articles/brand-consistency/",
+      "permanent": true
+    },
+    {
+      "source": "/organic-social-media-management",
+      "destination": "/articles/organic-social-media-management/",
+      "permanent": true
+    },
+    {
+      "source": "/why-digital-presence-consistency-matters",
+      "destination": "/articles/why-digital-presence-consistency-matters/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-maintain-brand-voice",
+      "destination": "/articles/how-to-maintain-brand-voice/",
+      "permanent": true
+    },
+    {
+      "source": "/brand-consistency/",
+      "destination": "/articles/brand-consistency/",
+      "permanent": true
+    },
+    {
+      "source": "/organic-social-media-management/",
+      "destination": "/articles/organic-social-media-management/",
+      "permanent": true
+    },
+    {
+      "source": "/why-digital-presence-consistency-matters/",
+      "destination": "/articles/why-digital-presence-consistency-matters/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-maintain-brand-voice/",
+      "destination": "/articles/how-to-maintain-brand-voice/",
+      "permanent": true
     }
   ]
 }
